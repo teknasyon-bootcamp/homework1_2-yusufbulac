@@ -10,23 +10,21 @@ $guess = "1470"; // Tahmin edilen değer
 
 
 if ($gender == "male") {
-    $maleBmr = 88.362 + (13.397 * $weight) + (4.799 * $height) - (5.677 * $age); //erkek günlük BMR hesabı
-    if ($maleBmr > $guess) {
-        echo "BMR: $maleBmr<br>Tahmin değerinden büyük";
-    } elseif ($maleBmr == $guess) {
-        echo "BMR: $maleBmr<br>Tahmin değerine eşit";
-    } else {
-        echo "BMR: $maleBmr<br>Tahmin değerinden düşük";
-    }
+    $bmr = 88.362 + (13.397 * $weight) + (4.799 * $height) - (5.677 * $age); //erkek günlük BMR hesabı
+
 } elseif ($gender == "female") {
-    $femaleBmr = 447.593 + (9.247 * $weight) + (3.098 * $height) - (4.330 * $age); //kadın günlük BMR hesabı
-    if ($femaleBmr > $guess) {
-        echo "BMR: $femaleBmr<br>Tahmin değerinden büyük";
-    } elseif ($femaleBmr == $guess) {
-        echo "BMR: $femaleBmr<br>Tahmin değerine eşit";
-    } else {
-        echo "BMR: $femaleBmr<br>Tahmin değerinden düşük";
-    }
+    $bmr = 447.593 + (9.247 * $weight) + (3.098 * $height) - (4.330 * $age); //kadın günlük BMR hesabı
+
+}
+
+echo $bmr."<br>";
+
+if ($bmr > $guess) {
+    echo "Tahmin değerinden büyük";
+} elseif ($Bmr == $guess) {
+    echo "Tahmin değerine eşit";
+} else {
+    echo "Tahmin değerinden düşük";
 }
 
 /**
