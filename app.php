@@ -22,7 +22,7 @@ echo "BMR: $bmr<br>";
 
 if ($bmr > $guess) {
     echo "Tahmin değerinden büyük";
-} elseif ($Bmr == $guess) {
+} elseif ($bmr == $guess) {
     echo "Tahmin değerine eşit";
 } else {
     echo "Tahmin değerinden düşük";
