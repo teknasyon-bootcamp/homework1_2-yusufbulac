@@ -7,6 +7,27 @@ $age = 25; // yaş (sene)
 
 $guess = "1470"; // Tahmin edilen değer
 
+$bmr = 88.362 + (13.397 * $weight) + (4.799 * $height) - (5.677 * $age);
+echo "BMR: $bmr<br>";
+
+if ($gender == "male") {
+    if ($bmr > $guess) {
+        echo "Tahmin değerinden büyük";
+    } elseif ($bmr == $guess) {
+        echo "Tahmin değerine eşit";
+    } else {
+        echo "Tahmin değerinden düşük";
+    }
+} elseif ($gender == "female") {
+    if ($bmr > $guess) {
+        echo "Tahmin değerinden büyük";
+    } elseif ($bmr == $guess) {
+        echo "Tahmin değerine eşit";
+    } else {
+        echo "Tahmin değerinden düşük";
+    }
+}
+
 /**
  * Bu ödevde bazal metabolizma hesaplaması yapacağız.
  * Yukarıdaki değişkenleri ve aşağıdaki formülü kullanarak
