@@ -17,6 +17,7 @@ if ($gender == "male") {
 
 }
 
+
 echo "BMR: $bmr<br>";
 
 if ($bmr > $guess) {
